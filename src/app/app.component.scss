@@ -1,0 +1,11 @@
+@use 'src/partials/variables' as v;
+
+.principal-container {
+    background-color: v.$primary-color;
+    height: 100vh;
+    width: 100vw;
+
+    div {
+        background-color: v.$secondary-color;
+    }
+}
