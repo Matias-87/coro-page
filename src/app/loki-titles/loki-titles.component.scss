@@ -1,0 +1,18 @@
+@use '/src/partials/variables' as v;
+
+h1 {
+    color: v.$white-color;
+    font-size: 25vw;
+    margin: 0 10px;
+    text-decoration: underline;
+    text-decoration-color: v.$secondary-color;
+}
+
+.loki-title {
+    .font-1 { font-family: 'Griffy', serif; }
+    .font-2 { font-family: 'Kenia', sans-serif; }
+    .font-3 { font-family: 'Agbalumo', cursive; }
+    .font-4 { font-family: 'Bebas Neue', cursive; }
+    .font-5 { font-family: 'Shadows Into Light', cursive; }
+    .font-6 { font-family: 'Pixelify Sans', sans-serif; }
+}
