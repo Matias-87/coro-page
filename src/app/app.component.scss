@@ -3,21 +3,11 @@
 .principal-container {
     background-color: v.$primary-color;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    div {
-        background-color: v.$secondary-color;
-    }
-
-    h1 {
-        color: v.$white-color;
-        font-size: 25vw;
-        text-wrap: wrap;
-        // background: red;
-    }
+    position: relative;
 }

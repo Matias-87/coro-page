@@ -1,0 +1,10 @@
+@use '/src/partials/variables' as v;
+
+.animated-line {
+    height: 3vw;
+    width: 80vw;
+    background-color: v.$secondary-color;
+    position: absolute;
+    top: 50;
+    left: 5%;
+}

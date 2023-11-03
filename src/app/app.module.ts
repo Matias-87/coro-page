@@ -5,12 +5,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LokiTitlesComponent } from './loki-titles/loki-titles.component';
+import { AnimatedLineComponent } from './animated-line/animated-line.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LokiTitlesComponent
+    LokiTitlesComponent,
+    AnimatedLineComponent
   ],
   imports: [
     BrowserModule,
