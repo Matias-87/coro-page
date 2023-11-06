@@ -6,8 +6,18 @@
     width: 100%;
     overflow-x: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     position: relative;
+    // border-bottom: 2px solid red;
 }
+
+app-loki-titles {
+    height: 70%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
