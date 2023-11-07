@@ -15,7 +15,7 @@ export class AnimatedLineComponent {
   checkScroll() {
     const scrollPosition = window.scrollY;
     this.progress = Math.floor(scrollPosition);
-    console.log(this.progress)
+    // console.log(this.progress)
   }
 
   getAnimationState(progress: number): string {
