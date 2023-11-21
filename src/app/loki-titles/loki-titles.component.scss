@@ -26,7 +26,7 @@ h1 {
 .underline {
     // height: 30%;
     width: 80vw;
-    border: 1vh solid v.$secondary-color;
+    border: 1.5vw solid v.$secondary-color;
     position: absolute;
     top: 50;
 }
@@ -39,5 +39,6 @@ h1 {
 
     .underline {
         width: 530px;
+        border: 1vh solid v.$secondary-color;
     }
 }
