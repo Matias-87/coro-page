@@ -1,41 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { trigger, state, transition, animate, style, keyframes} from '@angular/animations'
 import { Observable, Subscription, concat, interval, map, of } from 'rxjs';
 import { take } from 'rxjs';
-const fontFamilies: string[] = ['Griffy', 'Pixelfy Sans', 'Agbalumo', 'Bebas Neue', 'Kenia', 'Shadows Into Light']
 
 @Component({
   selector: 'app-loki-titles',
   templateUrl: './loki-titles.component.html',
-  styleUrls: ['./loki-titles.component.scss'],
-  animations: [
-    trigger('changeFont1', [
-      state('end', style({
-        'font-family': 'Roboto'
-      })),
-      transition('* => end', [
-        animate('1.5s', keyframes ([
-          style({ 'font-family': fontFamilies[Math.floor(Math.random() * 6)] }),
-          style({ 'font-family': fontFamilies[Math.floor(Math.random() * 6)]}),
-          style({ 'font-family': fontFamilies[Math.floor(Math.random() * 6)]})
-        ]))
-      ])
-    ]),
-    trigger('changeFont2', [
-      state('end', style({
-        'font-family': 'Roboto'
-      })),
-      transition('* => end', [
-        animate('1.5s', keyframes ([
-          style({ 'font-family': fontFamilies[Math.floor(Math.random() * 6)] }),
-          style({ 'font-family': fontFamilies[Math.floor(Math.random() * 6)]}),
-          style({ 'font-family': fontFamilies[Math.floor(Math.random() * 6)]})
-        ]))
-      ])
-    ])
-  ]
+  styleUrls: ['./loki-titles.component.scss']
 })
-export class LokiTitlesComponent implements OnInit{
+export class LokiTitlesComponent implements OnInit, OnDestroy{
   fontSubscribe?: Subscription;
 
   fontBoolean = true;
@@ -62,6 +35,10 @@ export class LokiTitlesComponent implements OnInit{
   ngOnInit(): void {
     this.fontBoolean = false;
     this.changeFonts();
+  }
+
+  ngOnDestroy(): void {
+    this.fontSubscribe?.unsubscribe;
   }
 
   changeFonts() {
