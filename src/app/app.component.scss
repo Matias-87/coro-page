@@ -8,7 +8,23 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
+    position: relative;
+    z-index: -1000;
     // border-bottom: 2px solid red;
+}
+
+.background-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+}
+
+.animation-simple {
+    animation: infRotate 20s linear infinite;
+    transform-origin: 150px 100px;
 }
 
 // app-loki-titles {
@@ -19,3 +35,21 @@
 //     flex-shrink: 0;
 // }
 
+@keyframes infRotate {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
