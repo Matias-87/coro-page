@@ -1,5 +1,5 @@
 <div class="principal-container">
-  <svg viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMin slice" class="background-svg" xmlns="http://www.w3.org/2000/svg">
+  <!-- <svg viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMin slice" class="background-svg" xmlns="http://www.w3.org/2000/svg">
     <g filter="url(#svg_21_blur)" id="svg_21">
       <path  class="animation-simple" filter="url(#svg_1_blur)" stroke="#000000" id="svg_1"
         d="m130.92133,-18.2c-45.33595,8 -54.40313,92 -55.53652,91.2c1.13339,0.8 37.40215,137.79999 114.47325,41.8c77.07111,-96 -13.60078,-141 -58.93673,-133z"
@@ -35,6 +35,35 @@
       <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_21_blur">
         <feGaussianBlur stdDeviation="10" in="SourceGraphic" />
       </filter>
+    </defs>
+  </svg> -->
+  <svg height="100vh" width="100vw" viewBox="0 0 500 200" preserveAspectRatio="xMidYMin slice" class="background-svg"
+    xmlns="http://www.w3.org/2000/svg" stroke="null">
+    <path d="M0 100 Q25 150, 50 100 T200 100 T300 80 T500 80 V200 H0 Z" fill="#FFC526"
+      transform="scale(1, -1) translate(0, -200)" fill="url(#svg_5)">
+      <animate attributeName="d" dur="30s" repeatCount="indefinite" values="
+        M0 100 Q25 150, 50 100 T200 100 T300 80 T500 80 V200 H0 Z;
+        M0 150 Q25 125, 50 150 T100 100 T300 80 T500 80 V200 H0 Z;
+        M0 100 Q25 150, 50 100 T200 100 T300 80 T500 80 V200 H0 Z;
+      " />
+    </path>
+    <!-- <path stroke="null" id="svg_3"
+        d="m-164.58069,48.65508c-39.6838,94.6587 96.37494,117.95931 92.59553,116.50302c-3.77941,-1.45629 256.99986,101.94014 224.87488,1.45629c-32.12498,-100.48385 319.36013,1.45629 317.47044,0.29127c1.88969,1.16502 311.80128,238.53991 119.05138,8.44646c-192.7499,-230.09345 306.13218,-72.81438 304.24251,-73.97941c1.88967,1.16502 15.11761,-202.71525 -224.87491,-185.23979c-239.99252,17.47545 -793.67604,37.86348 -833.35984,132.52217z"
+        opacity="NaN" fill="url(#svg_5)" /> -->
+    <defs>
+      <linearGradient spreadMethod="pad" y2="0" x2="1" y1="0"
+        x1="0" id="svg_1">
+        <stop offset="0" stop-color="#ffc526" />
+        <stop offset="1" stop-opacity="0.99609"
+          stop-color="#ffffff" />
+      </linearGradient>
+      <linearGradient spreadMethod="pad" y2="0" x2="1" y1="0"
+        x1="0" id="svg_5">
+        <stop stroke="null" stop-opacity="0.99609" offset="0"
+          stop-color="#ff9e26" />
+        <stop stroke="null" offset="1" stop-opacity="0.99609"
+          stop-color="#ffffff" />
+      </linearGradient>
     </defs>
   </svg>
   <app-loki-titles></app-loki-titles>
