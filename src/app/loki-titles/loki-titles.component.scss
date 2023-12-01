@@ -1,22 +1,56 @@
 @use '/src/partials/variables' as v;
 
-.titles-container {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    background-color: green;
-    justify-content: center;
+// .titles-container {
+//     display: flex;
+//     height: 100%;
+//     width: 100%;
+//     flex-direction: column;
+//     background-color: red;
+//     justify-content: center;
+// }
+
+.box {
+    position: relative;
+    perspective: 1000px;
+
+    &__content {
+        background-color: rgb(0, 0, 0, .5);
+        transform-style: preserve-3d;
+        transition: all 0.5s linear;
+        padding: 20px;
+        border-style: solid;
+        border-image: linear-gradient(to bottom, v.$orange-color, v.$secondary-color, #181818) 1 100%;
+    }
+
+    &:hover &__content {
+        transform: rotateY(180deg);
+    }
+
+    &__front {
+        backface-visibility: hidden;
+        height: 100%;
+    }
+
+    &__back {
+        backface-visibility: hidden;
+        position: absolute;
+        padding: 20px;
+        top: 0;
+        left: 0;
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+        transform: rotateY(180deg);
+    }
 }
+
 
 h1 {
     color: v.$white-color;
     font-size: 25vw;
-    margin: 0 10px;
     text-decoration: underline;
     text-decoration-color: v.$secondary-color;
     flex-shrink: 0;
-    padding-left: 5%;
 }
 
 .loki-title {
@@ -27,11 +61,17 @@ h1 {
     // height: 30%;
     width: 80vw;
     border: 1.5vw solid v.$secondary-color;
-    position: absolute;
-    top: 50;
+    // position: absolute;
+    // top: 50;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1300px) {
+    .box {
+        width: 50%;
+    }
+}
+
+@media (min-width: 650px) {
     h1 {
         // color: red;
         font-size: 160px;
