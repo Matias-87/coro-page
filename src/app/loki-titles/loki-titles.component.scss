@@ -12,12 +12,13 @@
 .box {
     position: relative;
     perspective: 1000px;
+    height: 90vh;
 
     &__content {
+        height: 90vh;
         background-color: rgb(0, 0, 0, .5);
         transform-style: preserve-3d;
         transition: all 0.5s linear;
-        padding: 20px;
         border-style: solid;
         border-image: linear-gradient(to bottom, v.$orange-color, v.$secondary-color, #181818) 1 100%;
     }
@@ -27,6 +28,10 @@
     }
 
     &__front {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         backface-visibility: hidden;
         height: 100%;
     }
@@ -41,6 +46,12 @@
         overflow: hidden;
         width: 100%;
         transform: rotateY(180deg);
+        overflow-y: scroll;  scrollbar-width: none; 
+        -ms-overflow-style: none; 
+    }
+
+    &__back::-webkit-scrollbar {
+        display: none; 
     }
 }
 
