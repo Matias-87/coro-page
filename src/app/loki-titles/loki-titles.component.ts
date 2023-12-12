@@ -12,6 +12,7 @@ export class LokiTitlesComponent implements OnInit, OnDestroy{
   fontSubscribe?: Subscription;
 
   fontBoolean = true;
+  rotateClass: boolean = false;
 
   font1: string | undefined;
   font2: string | undefined;
@@ -50,5 +51,9 @@ export class LokiTitlesComponent implements OnInit, OnDestroy{
       this.font5 = this.fonts[value === 0 ? value : Math.floor(Math.random() * this.fontsLength) + 1];
       this.font6 = this.fonts[value === 0 ? value : Math.floor(Math.random() * this.fontsLength) + 1];
     })
+  }
+
+  addRotateClass() {
+    this.rotateClass = !this.rotateClass;
   }
 }

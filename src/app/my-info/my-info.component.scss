@@ -4,17 +4,68 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
 
     h4 {
         color: v.$white-color;
         text-decoration: underline;
         text-decoration-color: v.$secondary-color;
-        font-size: 5vw;
     }
 
     p {
         width: 80%;
         color: v.$white-color;
         text-align: center;
+    }
+
+    hr {
+        height: 5px;
+        width: 100%;
+        background: v.$secondary-color;
+    }
+}
+
+.icons-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin-top: 20px;
+    overflow: scroll;
+
+    svg {
+        height: 80px;
+        width: 80px;
+        margin: 0px 10px 20px 10px;
+        flex-shrink: 0;
+        fill: v.$white-color;
+
+        g, path {
+            fill: v.$white-color;
+        }
+    }
+}
+
+@media (min-width: 650px) {
+    .my-info-container {
+        h4 {
+            font-size: 4vw;
+        }
+    }
+
+    .icons-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+
+        svg {
+            height: 80px;
+            width: 80px;
+            margin: 0px 10px 20px 10px;
+            flex-shrink: 0;
+        }
     }
 }
