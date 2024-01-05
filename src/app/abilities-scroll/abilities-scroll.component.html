@@ -1,0 +1,10 @@
+<div class="icons-container">
+    <ul class="icons-container__icons">
+        <ng-container *ngFor="let path of svgPaths">
+            <li>
+                <img [src]="path[0]" alt="SVG Icon">
+                <p>{{path[1]}}</p>
+            </li>
+        </ng-container>
+    </ul>
+</div>

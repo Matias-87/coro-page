@@ -7,6 +7,7 @@ import { LokiTitlesComponent } from './loki-titles/loki-titles.component';
 import { AnimatedLineComponent } from './animated-line/animated-line.component';
 import { AbilitiesComponent } from './abilities/abilities.component';
 import { MyInfoComponent } from './my-info/my-info.component';
+import { AbilitiesScrollComponent } from './abilities-scroll/abilities-scroll.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MyInfoComponent } from './my-info/my-info.component';
     LokiTitlesComponent,
     AnimatedLineComponent,
     AbilitiesComponent,
-    MyInfoComponent
+    MyInfoComponent,
+    AbilitiesScrollComponent
   ],
   imports: [
     BrowserModule,
