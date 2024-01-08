@@ -1,14 +1,5 @@
 @use '/src/partials/variables' as v;
 
-// .titles-container {
-//     display: flex;
-//     height: 100%;
-//     width: 100%;
-//     flex-direction: column;
-//     background-color: red;
-//     justify-content: center;
-// }
-
 .box {
     position: relative;
     perspective: 1000px;
@@ -22,10 +13,6 @@
         border-style: solid;
         border-image: linear-gradient(to bottom, v.$orange-color, v.$secondary-color, #181818) 1 100%;
     }
-
-    // &:hover &__content {
-    //     transform: rotateY(180deg);
-    // }
 
     &__front {
         display: flex;
@@ -75,10 +62,10 @@
     transform: rotateY(180deg);
 }
 
-.rotate2 {
-    transform: rotateY(180deg);
-    // eliminar esto despues de editar el back
-}
+// .rotate2 {
+//     transform: rotateY(180deg);
+//     // eliminar esto despues de editar el back
+// }
 
 
 h1 {
@@ -93,13 +80,10 @@ h1 {
     text-decoration: none;
 }
 
-.underline {
-    // height: 30%;
-    width: 80vw;
-    border: 1.5vw solid v.$secondary-color;
-    // position: absolute;
-    // top: 50;
-}
+// .underline {
+//     width: 80vw;
+//     border: 1.5vw solid v.$secondary-color;
+// }
 
 @media (min-width: 1300px) {
     .box {
@@ -113,10 +97,10 @@ h1 {
         font-size: 160px;
     }
 
-    .underline {
-        width: 530px;
-        border: 1vh solid v.$secondary-color;
-    }
+    // .underline {
+    //     width: 530px;
+    //     border: 1vh solid v.$secondary-color;
+    // }
 
     .icon-rotate {
         font-size: 40px;

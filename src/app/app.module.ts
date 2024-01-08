@@ -4,19 +4,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component';
 import { LokiTitlesComponent } from './loki-titles/loki-titles.component';
-import { AnimatedLineComponent } from './animated-line/animated-line.component';
-import { AbilitiesComponent } from './abilities/abilities.component';
 import { MyInfoComponent } from './my-info/my-info.component';
 import { AbilitiesScrollComponent } from './abilities-scroll/abilities-scroll.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LokiTitlesComponent,
-    AnimatedLineComponent,
-    AbilitiesComponent,
     MyInfoComponent,
-    AbilitiesScrollComponent
+    AbilitiesScrollComponent,
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

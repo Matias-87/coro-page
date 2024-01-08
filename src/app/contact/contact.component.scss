@@ -1,0 +1,45 @@
+@use '/src/partials/variables.scss' as v;
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    a {
+        margin: 10px;
+        text-decoration: none;
+        text-decoration: underline;
+        text-decoration-color: v.$secondary-color;
+        color: v.$white-color;
+        transition: color .5s ease;
+        transition: transform .5s ease;
+
+        &:hover {
+            color: v.$secondary-color;
+            transform: scale(1.1);
+            text-decoration-color: v.$white-color;
+        }
+    }
+
+    &__social-networks {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 10px;
+
+        i {
+            color: v.$white-color;
+            font-size: 40px;
+            transition: color .5s ease;
+            transition: transform .5s ease;
+
+            &:hover {
+                color: v.$secondary-color;
+                transform: scale(1.3);
+            }
+        }
+    }
+}

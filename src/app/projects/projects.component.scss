@@ -1,0 +1,7 @@
+@use '/src/partials/variables' as v;
+
+.card {
+    background: transparent;
+    border: 1px solid v.$secondary-color;
+    color: v.$white-color;
+}
