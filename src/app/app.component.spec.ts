@@ -1,9 +1,14 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { Component } from '@angular/core';
 
 describe('AppComponent', () => {
+  @Component({ standalone: true, selector: 'app-loki-titles', template: ''})
+  class LokiTitlesStubComponent { }
+
   beforeEach(() => TestBed.configureTestingModule({
-    declarations: [AppComponent]
+    declarations: [AppComponent],
+    imports: [LokiTitlesStubComponent]
   }));
 
   it('should create the app', () => {
@@ -16,12 +21,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('portafolio');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('portafolio app is running!');
   });
 });
