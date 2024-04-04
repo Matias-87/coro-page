@@ -10,6 +10,7 @@
         text-decoration: underline;
         text-decoration-color: v.$secondary-color;
         margin-bottom: 10px;
+        font-size: clamp(12px, 8vw, 70px);
     }
 
     p {
@@ -34,11 +35,11 @@
 }
 
 @media (min-width: 650px) {
-    .my-info-container {
-        h4 {
-            font-size: 4vw;
-        }
-    }
+    // .my-info-container {
+    //     h4 {
+    //         font-size: 4vw;
+    //     }
+    // }
 
     .icons-container {
         width: 100%;

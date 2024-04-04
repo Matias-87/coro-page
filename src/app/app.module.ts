@@ -8,6 +8,7 @@ import { MyInfoComponent } from './my-info/my-info.component';
 import { AbilitiesScrollComponent } from './abilities-scroll/abilities-scroll.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { BackgroundAnimationComponent } from './background-animation/background-animation.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactComponent } from './contact/contact.component';
     MyInfoComponent,
     AbilitiesScrollComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    BackgroundAnimationComponent
   ],
   imports: [
     BrowserModule,

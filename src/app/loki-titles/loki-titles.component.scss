@@ -70,7 +70,7 @@
 
 h1 {
     color: v.$white-color;
-    font-size: 25vw;
+    font-size: clamp(50px, 25vw, 160px);
     text-decoration: underline;
     text-decoration-color: v.$secondary-color;
     flex-shrink: 0;
@@ -91,18 +91,21 @@ h1 {
     }
 }
 
-@media (min-width: 650px) {
-    h1 {
-        // color: red;
-        font-size: 160px;
-    }
-
-    // .underline {
-    //     width: 530px;
-    //     border: 1vh solid v.$secondary-color;
-    // }
-
+@media (min-width: 1300px) {
     .icon-rotate {
         font-size: 40px;
+    }
+}
+
+// @media (min-width: 1000px) {
+//     h1 {
+//         font-size: 200px;
+//     }
+// }
+
+@media (max-height: 600px) {
+    h1 {
+        // color: blue;
+        font-size: 20vh;
     }
 }
