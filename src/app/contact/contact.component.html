@@ -1,8 +1,25 @@
 <div class="contact-container">
-    <div class="contact-container__social-networks">
-        <a href="https://www.linkedin.com/in/matias-mendez-924462261/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/Matias-87" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.instagram.com/mati_mendez_87/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+    <div class="contact-container__email-options">
+        <p>
+            matuemendez89@gmail.com
+            <i [style.opacity]="copied ? '1' : '0'" [style.transform]="copied ? 'rotate(0)' : 'rotate(-300deg)'"
+                [style.position]="copied ? 'static' : 'absolute'" class="fa-regular fa-circle-check"></i>
+        </p>
+        <div class="button-container">
+            <button (click)="copyEmail()" class="copy-button">
+                <i class="fa-regular fa-copy"></i>
+            </button>
+            <a href="mailto:matuemendez89@gmail.com" class="email-button">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
     </div>
-    <a href="mailto:matuemendez89@gmail.com">matuemendez89@gmail.com</a>
+    <div class="contact-container__social-networks">
+        <a href="https://www.linkedin.com/in/matias-mendez-924462261/" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-linkedin profiles"></i></a>
+        <a href="https://github.com/Matias-87" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-github profiles"></i></a>
+        <!-- <a href="https://www.instagram.com/mati_mendez_87/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a> -->
+    </div>
+    <!-- <a href="mailto:matuemendez89@gmail.com">matuemendez89@gmail.com</a> -->
 </div>

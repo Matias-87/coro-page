@@ -7,30 +7,15 @@
     justify-content: center;
     width: 100%;
 
-    a {
-        margin: 10px;
-        text-decoration: none;
-        text-decoration: underline;
-        text-decoration-color: v.$secondary-color;
-        color: v.$white-color;
-        transition: color .5s ease;
-        transition: transform .5s ease;
-
-        &:hover {
-            color: v.$secondary-color;
-            transform: scale(1.1);
-            text-decoration-color: v.$white-color;
-        }
-    }
-
     &__social-networks {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        margin-top: 10px;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        margin-bottom: 10px;
 
-        i {
+        .profiles {
             color: v.$white-color;
             font-size: 40px;
             transition: color .5s ease;
@@ -40,6 +25,104 @@
                 color: v.$secondary-color;
                 transform: scale(1.3);
             }
+        }
+    }
+
+    &__email-options {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+        p {
+            color: v.$white-color;
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            border-radius: 5px 0px 0px 5px;
+            border: 1px solid v.$secondary-color;
+            flex-shrink: 0;
+
+            .fa-circle-check {
+                margin-left: 10px;
+                color: v.$secondary-color;
+                transform: rotate(-300deg);
+                opacity: 0;
+                transition: 
+                    transform 1s ease,
+                    opacity 1s ease;
+            }
+        }
+
+        .button-container {
+            display: flex;
+            width: 30%;
+            height: 100%;
+            border-radius: 0px 10px 10px 0px;
+            overflow: hidden;
+        }
+
+        .copy-button {
+            height: 100%;
+            background-color: v.$secondary-color;
+            border: none;
+            width: 50%;
+            transition: background-color .2s ease;
+            border-right: 1px solid v.$primary-color;
+
+            i {
+                font-size: 20px;
+            }
+
+            &:hover {
+                background-color: v.$dark-yellow;
+            }
+        }
+
+        .email-button {
+            height: 100%;
+            background-color: v.$secondary-color;
+            border: none;
+            width: 50%;
+            transition: background-color .2s ease;
+            color: v.$primary-color;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: 20px;
+            }
+
+            &:hover {
+                background-color: v.$dark-yellow;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    //editar email option para que se apto para mobile
+    .contact-container__email-options {
+        flex-direction: column;
+        height: auto;
+
+        p {
+            width: 100%;
+            padding: 10px 0px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .button-container {
+            width: 100%;
+            height: 35px;
+            border-radius: 0px 0px 10px 10px;
         }
     }
 }
