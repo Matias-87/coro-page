@@ -5,10 +5,15 @@ import { Component } from '@angular/core';
 describe('AppComponent', () => {
   @Component({ standalone: true, selector: 'app-loki-titles', template: ''})
   class LokiTitlesStubComponent { }
+  @Component({ standalone: true, selector: 'app-background-animation', template: ''})
+  class BackgroundAnimationStubComponent { }
 
   beforeEach(() => TestBed.configureTestingModule({
     declarations: [AppComponent],
-    imports: [LokiTitlesStubComponent]
+    imports: [
+      LokiTitlesStubComponent,
+      BackgroundAnimationStubComponent
+    ]
   }));
 
   it('should create the app', () => {
