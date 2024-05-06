@@ -10,7 +10,7 @@ export class ContactComponent {
 
   async copyEmail() {
     try {
-      await navigator.clipboard.writeText('matuemendez89@gmail.com');
+      await navigator.clipboard.writeText('matiasmendez87.dev@gmail.com');
       this.copied = true;
     } catch (err) {
       console.error('Error al copiar en portapapeles: ', err);

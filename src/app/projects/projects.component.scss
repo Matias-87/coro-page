@@ -5,3 +5,15 @@
     border: 1px solid v.$secondary-color;
     color: v.$white-color;
 }
+
+.card-title {
+    a {
+        text-decoration: none;
+        color: v.$white-color;
+        transition: color .3s ease;
+
+        &:hover {
+            color: v.$secondary-color;
+        }
+    }
+}
