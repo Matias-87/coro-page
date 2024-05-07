@@ -86,23 +86,15 @@ h1 {
 //     border: 1.5vw solid v.$secondary-color;
 // }
 
-@media (min-width: 1300px) {
+@media (min-width: 1350px) {
     .box {
         width: 50%;
     }
-}
 
-@media (min-width: 1300px) {
     .icon-rotate {
         font-size: 40px;
     }
 }
-
-// @media (min-width: 1000px) {
-//     h1 {
-//         font-size: 200px;
-//     }
-// }
 
 @media (max-height: 600px) {
     h1 {

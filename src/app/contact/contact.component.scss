@@ -107,7 +107,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
     //editar email option para que se apto para mobile
     .contact-container__email-options {
         flex-direction: column;
@@ -123,6 +123,14 @@
             width: 100%;
             height: 35px;
             border-radius: 0px 0px 10px 10px;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .contact-container__email-options {
+        p {
+            font-size: 4vw;
         }
     }
 }

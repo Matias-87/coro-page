@@ -7,6 +7,12 @@
 }
 
 .card-title {
+    overflow: hidden;
+    
+    span {
+        white-space: nowrap;
+    }
+
     a {
         text-decoration: none;
         color: v.$white-color;
