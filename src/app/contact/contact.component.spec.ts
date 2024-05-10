@@ -21,7 +21,7 @@ describe('ContactComponent', () => {
   });
 
   it('should set copied to true after succesfully copying email', async () => {
-    const email = 'matuemendez89@gmail.com';
+    const email = 'matiasmendez87.dev@gmail.com';
     spyOn(navigator.clipboard, 'writeText').and.resolveTo();
 
     await component.copyEmail();
