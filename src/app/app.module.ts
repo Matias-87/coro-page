@@ -9,6 +9,7 @@ import { AbilitiesScrollComponent } from './abilities-scroll/abilities-scroll.co
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { BackgroundAnimationComponent } from './background-animation/background-animation.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BackgroundAnimationComponent } from './background-animation/background-
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
