@@ -4,7 +4,8 @@
     position: relative;
     perspective: 1000px;
     height: 90vh;
-    // backdrop-filter: blur(5px);
+    margin: auto;
+    backdrop-filter: blur(5px);
 
     &__content {
         height: 90vh;
@@ -12,7 +13,9 @@
         transform-style: preserve-3d;
         transition: all 0.5s linear;
         border-style: solid;
-        border-image: linear-gradient(to bottom, v.$orange-color, v.$secondary-color, #181818) 1 100%;
+        border-radius: 30px;
+        box-shadow: 1px -1px 51px -6px rgba(255,255,255,0.75);
+        // border-image: linear-gradient(to bottom, v.$orange-color, v.$secondary-color, #181818) 1 100%;
     }
 
     &__front {
@@ -22,6 +25,15 @@
         justify-content: center;
         backface-visibility: hidden;
         height: 100%;
+
+        img {
+            // utilizar object-fit contain y que la imagen se reduzca infinitamente
+            // o utilizar cover y que en las resoluciones pequeñas se vea recortada la imagen
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+
+        }
     }
 
     &__back {
@@ -48,13 +60,16 @@
     position: absolute;
     right: 0;
     top: 0;
-    margin: 10px;
+    margin: 30px;
     font-size: 30px;
     color: v.$white-color;
     transition: all .5s ease;
+    background: v.$primary-purple;
+    padding: 10px;
+    border-radius: 50px;
+    animation: pulse 2s infinite;
 
     &:hover {
-        color: v.$secondary-color;
         transform: scale(1.1);
     }
 }
@@ -100,5 +115,21 @@ h1 {
     h1 {
         // color: blue;
         font-size: 20vh;
+    }
+
+    // img {
+    //     object-fit: contain;
+    // }
+}
+
+@keyframes pulse {
+    0% {
+        background-color: v.$primary-purple;
+    }
+    50% {
+        background-color: v.$secondary-purple;
+    }
+    100% {
+        background-color: v.$primary-purple;
     }
 }
