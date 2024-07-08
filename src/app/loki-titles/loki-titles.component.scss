@@ -60,7 +60,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    margin: 30px;
+    margin: 10px;
     font-size: 30px;
     color: v.$white-color;
     transition: all .5s ease;
@@ -120,6 +120,19 @@ h1 {
     // img {
     //     object-fit: contain;
     // }
+}
+
+@media (max-width: 600px) {
+    .box {
+        display: flex;
+        align-items: center;
+    }
+    .box__content {
+        height: 60vh;
+        align-items: center;
+        position: relative;
+        top: 0;
+    }
 }
 
 @keyframes pulse {
