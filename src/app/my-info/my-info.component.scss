@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
     height: 100%;
 
     h4 {
@@ -26,11 +25,11 @@
     }
 
     hr {
-        height: 5px;
-        width: 100%;
+        width: 100% !important;
         background: v.$secondary-purple;
         margin: 20px;
         padding: 0px;
+        flex: 0 0 5px;
     }
 
     a {
@@ -43,36 +42,6 @@
         i {
             font-size: 45px;
             margin: 5px;
-        }
-    }
-}
-
-// .app-container {
-//     width: 100%;
-//     overflow: hidden;
-// }
-
-@media (min-width: 650px) {
-    // .my-info-container {
-    //     h4 {
-    //         font-size: 4vw;
-    //     }
-    // }
-
-    .icons-container {
-        width: 100%;
-        height: auto;
-        display: flex;
-        margin-top: 20px;
-        justify-content: center;
-        flex-wrap: wrap;
-        overflow: hidden;
-
-        svg {
-            height: 80px;
-            width: 80px;
-            margin: 0px 10px 20px 10px;
-            flex-shrink: 0;
         }
     }
 }

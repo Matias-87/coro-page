@@ -14,8 +14,7 @@
         transition: all 0.5s linear;
         border-style: solid;
         border-radius: 30px;
-        box-shadow: 1px -1px 51px -6px rgba(255,255,255,0.75);
-        // border-image: linear-gradient(to bottom, v.$orange-color, v.$secondary-color, #181818) 1 100%;
+        box-shadow: 1px -1px 51px -6px rgba(255, 255, 255, 0.75);
     }
 
     &__front {
@@ -27,8 +26,6 @@
         height: 100%;
 
         img {
-            // utilizar object-fit contain y que la imagen se reduzca infinitamente
-            // o utilizar cover y que en las resoluciones pequeñas se vea recortada la imagen
             object-fit: contain;
             height: 100%;
             width: 100%;
@@ -49,6 +46,9 @@
         overflow-y: scroll;
         scrollbar-width: none;
         -ms-overflow-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__back::-webkit-scrollbar {
@@ -96,12 +96,7 @@ h1 {
     text-decoration: none;
 }
 
-// .underline {
-//     width: 80vw;
-//     border: 1.5vw solid v.$secondary-color;
-// }
-
-@media (min-width: 1350px) {
+@media (min-width: 1100px) {
     .box {
         width: 50%;
     }
@@ -113,25 +108,22 @@ h1 {
 
 @media (max-height: 600px) {
     h1 {
-        // color: blue;
         font-size: 20vh;
     }
-
-    // img {
-    //     object-fit: contain;
-    // }
 }
 
 @media (max-width: 600px) {
     .box {
         display: flex;
         align-items: center;
-    }
-    .box__content {
-        height: 60vh;
-        align-items: center;
-        position: relative;
-        top: 0;
+
+        &__content {
+            height: 60vh;
+        }
+
+        &__back {
+            display: block;
+        }
     }
 }
 
@@ -139,9 +131,11 @@ h1 {
     0% {
         background-color: v.$primary-purple;
     }
+
     50% {
         background-color: v.$secondary-purple;
     }
+
     100% {
         background-color: v.$primary-purple;
     }

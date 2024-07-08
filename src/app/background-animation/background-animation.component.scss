@@ -10,29 +10,6 @@
     transform: rotate(180deg);
 }
 
-//opcion 1: 
-// .ocean background-color: #9A6296
-// wave svg colors (.25: #6a9bd9 ) (#9a6296)
-
-//opcion 2: 
-// .ocean background-color: #624479
-// wave svg colors (.25: #8d5277 ) (#624479)
-
-//opcion 3:
-// todo #E0479E
-
-// opcion 4:
-// .ocean background-color: #DC7F9B
-// wave svg colors (.25: #F7A1C4 ) (#DC7F9B)
-
-//opcion 5:
-// .ocean background-color: #FF2CAE
-// wave svg colors (.25: #BC2BFF ) (#FF2CAE)
-
-//opcion 6:
-// .ocean background-color: #BC2BFF
-// wave svg colors (.25: #FF2CAE ) (#BC2BFF)
-
 .wave {
     background: url(/assets/svg/wave.svg) repeat-x;
     position: absolute;
