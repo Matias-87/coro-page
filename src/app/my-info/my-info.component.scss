@@ -8,25 +8,35 @@
 
     h4 {
         color: v.$white-color;
-        text-decoration: underline;
-        text-decoration-color: v.$secondary-purple;
+        // text-decoration: underline;
         text-align: center;
         margin-bottom: 10px;
         font-size: clamp(12px, 8vw, 70px);
         margin-bottom: 15px;
+        font-family: "Baskervville SC", serif;
+        text-shadow: 0px 0px 10px v.$white-color;
     }
 
-    p {
+    &__info {
         width: 80%;
         color: v.$white-color;
         text-align: center;
         margin: 0px;
         font-size: 18px;
+        text-align: justify;
+    }
+
+    &__gracias {
+        color: v.$white-color;
+        font-family: "Baskervville SC", serif;
+        text-shadow: 0px 0px 10px v.$white-color;   
+        font-size: clamp(5px, 6vw, 30px) !important;
+        text-align: center ;
     }
 
     hr {
         width: 100% !important;
-        background: v.$secondary-purple;
+        background: v.$bright-purple;
         margin: 20px;
         padding: 0px;
         flex: 0 0 5px;
@@ -37,10 +47,12 @@
         margin-top: 15px;
         display: flex;
         align-items: center;
-        color: v.$secondary-purple;
+        color: v.$white-color;
         animation: pulse 2s infinite;
+        text-shadow: 0px 0px 15px v.$bright-purple;
+
         i {
-            font-size: 45px;
+            font-size: 50px;
             margin: 5px;
         }
     }
@@ -50,9 +62,11 @@
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
