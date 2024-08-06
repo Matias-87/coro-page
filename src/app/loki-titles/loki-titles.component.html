@@ -1,13 +1,15 @@
-<div class="box" (click)="addRotateClass()">
-    <div [class.rotate]="rotateClass" class="box__content rotate2">
-        <div class="box__front">
-            <img src="assets/imgs/logo-transparente.PNG" alt="Logo del Coro">
-            <i class="fa-solid fa-rotate icon-rotate rotateButton"></i>
-        </div>
-        <div class="box__back">
-            <i class="fa-solid fa-rotate icon-rotate rotateButton"></i>
-            <app-my-info></app-my-info>
+<div class="elements-container">
+    <div class="box" (click)="addRotateClass()">
+        <div [class.rotate]="rotateClass" class="box__content rotate2">
+            <div class="box__front">
+                <img src="assets/imgs/logo-transparente.PNG" alt="Logo del Coro">
+                <i class="fa-solid fa-rotate icon-rotate rotateButton"></i>
+            </div>
+            <div class="box__back">
+                <i class="fa-solid fa-rotate icon-rotate rotateButton"></i>
+                <app-my-info></app-my-info>
+            </div>
         </div>
     </div>
+    <p class="contacto text-secondary">web por Matias Mendez: matiasmendez87.dev@gmail.com</p>
 </div>
-<p class="contacto text-secondary">web por Matias Mendez: matiasmendez87.dev@gmail.com</p>
